@@ -1,9 +1,12 @@
 package cbassdagreat.github.boardgamesboji.model
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-data class BojiItem(
+@Entity(tableName = "board_game")
+data class ListaBojiItem(
     @SerializedName("age")
     val age: String,
     @SerializedName("Artist")
@@ -15,6 +18,7 @@ data class BojiItem(
     @SerializedName("Designer")
     val designer: String,
     @SerializedName("id")
+    @PrimaryKey
     val id: Int,
     @SerializedName("image")
     val image: String,
