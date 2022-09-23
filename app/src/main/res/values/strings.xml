@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">BoardGamesBoji</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="by">by</string>
+    <string name="designer">Designer:</string>
+    <string name="artist">Artist:</string>
+    <string name="publisher">Publisher:</string>
+    <string name="players">Players</string>
+    <string name="playing_t">Playing Time</string>
+    <string name="year">Year:</string>
+    <string name="price">Price</string>
+    <string name="link">Official Link</string>
+    <string name="description">Description</string>
+    <string name="category">Classification</string>
+    <string name="mech">Mechanism</string>
+    <string name="age">Age</string>
+    <string name="descriptionexample">Explore the galaxy and create links with lost civilizations.</string>
+    <string name="buy">Buy</string>
+    <string name="add">Whishlist</string>
+    <string name="subscribe">Subscribe</string>
+
 </resources>
