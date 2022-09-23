@@ -5,24 +5,24 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import cbassdagreat.github.boardgamesboji.dao.BojiItemDao
-import cbassdagreat.github.boardgamesboji.model.ListaBojiItem
+import cbassdagreat.github.boardgamesboji.model.BojiItem
 
-@Database(entities = [ListaBojiItem::class], version = 1)
-abstract class ProyectoDB : RoomDatabase(){
+@Database(entities = [BojiItem::class], version = 1)
+abstract class ProjectDB : RoomDatabase(){
 
     abstract fun gameItem() : BojiItemDao
 
     companion object{
         @Volatile
-        private var instance:ProyectoDB? = null
+        private var instance:ProjectDB? = null
 
-        fun getInstance(context:Context) : ProyectoDB
+        fun getInstance(context:Context) : ProjectDB
         {
             if (instance==null)
             {
                 synchronized(this)
                 {
-                    instance=Room.databaseBuilder(context,ProyectoDB::class.java,"project_db").build()
+                    instance=Room.databaseBuilder(context,ProjectDB::class.java,"project_db").build()
                 }
             }
             return instance!!

@@ -6,7 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import cbassdagreat.github.boardgamesboji.model.ListaBoji
-import cbassdagreat.github.boardgamesboji.model.ListaBojiItem
+import cbassdagreat.github.boardgamesboji.model.BojiItem
 
 
 @Dao
@@ -16,5 +16,5 @@ interface BojiItemDao {
     fun agregar(listaBoji: ListaBoji)
 
     @Query("select age, artist, classification, description, designer, id, image, name, officialLink, players, playingTime, price, publisher, year from board_game")
-    fun listar(): LiveData<List<ListaBojiItem>>
+    fun listar(): LiveData<List<BojiItem>>
 }

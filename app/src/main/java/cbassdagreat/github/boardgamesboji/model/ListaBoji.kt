@@ -1,4 +1,4 @@
 package cbassdagreat.github.boardgamesboji.model
 
 
-class ListaBoji : ArrayList<ListaBojiItem>()
+class ListaBoji : ArrayList<BojiItem>()

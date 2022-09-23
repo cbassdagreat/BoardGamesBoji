@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "board_game")
-data class ListaBojiItem(
+data class BojiItem(
     @SerializedName("age")
     val age: String,
     @SerializedName("Artist")
