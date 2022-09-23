@@ -11,8 +11,8 @@ data class BojiItem(
     val age: String,
     @SerializedName("Artist")
     val artist: String,
-    @SerializedName("classification")
-    val classification: Classification,
+    //@SerializedName("classification")
+    //val classification: Classification,
     @SerializedName("description")
     val description: String,
     @SerializedName("Designer")

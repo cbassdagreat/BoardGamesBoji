@@ -15,6 +15,6 @@ interface BojiItemDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun agregar(listaBoji: ListaBoji)
 
-    @Query("select age, artist, classification, description, designer, id, image, name, officialLink, players, playingTime, price, publisher, year from board_game")
+    @Query("select age, artist, description, designer, id, image, name, officialLink, players, playingTime, price, publisher, year from board_game")
     fun listar(): LiveData<List<BojiItem>>
 }
